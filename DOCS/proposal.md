@@ -54,6 +54,37 @@ Describe the datasets you are using to answer your research questions.
 - Which variable/column will be your target/label in your ML model?
 - Which variables/columns may be selected as features/predictors for your ML models?
 
+## 3. Data 
+
+**Data Sources:**
+
+- Data is sourced from [Data.gov - Electric Vehicle Population Data](https://catalog.data.gov/dataset/electric-vehicle-population-data).
+
+**Data Details:**
+
+- Data Size: 
+
+- Data Shape: 
+
+- Time Period: 
+
+
+Each row in the dataset represents [describe what each row represents, e.g., a registered electric vehicle owner].
+
+**Data Dictionary:**
+
+  
+| Column Name       | Data Type    | Definition       | Potential Values  |
+| ----------------- | ------------ | ---------------- | ----------------- |
+
+
+
+
+**Target/Label Variable:** 
+
+**Feature/Predictor Variables:** 
+
+
 ## 4. Exploratory Data Analysis (EDA)
 
 - Perform data exploration using Jupyter Notebook
