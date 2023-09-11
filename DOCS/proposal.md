@@ -2,14 +2,6 @@
  
 ## 1. Title and Author
 
-- ### Localized Electric Vehicle Planning
-- Prepared for UMBC Data Science Master Degree Capstone by Dr Chaojie (Jay) Wang
-- Author Name: Sri Sai Kashyap Yerrapragada
-- [![GitHub Profile](https://img.shields.io/badge/GitHub-Profile-brightgreen.svg)](https://github.com/kyerrapragada)
-- [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue.svg)](https://www.linkedin.com/in/sri-yerrapragada)
-- Link to your PowerPoint presentation file -_WIP_
-- Link to your YouTube video -_WIP_
-
 # **Localized Electric Vehicle Planning**
 
 *Prepared for UMBC Data Science Master Degree Capstone by Dr. Chaojie (Jay) Wang*
