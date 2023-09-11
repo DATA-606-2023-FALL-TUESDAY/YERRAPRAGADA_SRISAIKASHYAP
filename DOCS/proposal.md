@@ -10,8 +10,8 @@
 
 - [GitHub Profile](https://github.com/kyerrapragada)
 - [LinkedIn Profile](https://www.linkedin.com/in/sri-yerrapragada)
-- [Link to your PowerPoint presentation file (_Work in Progress_)](link-to-ppt-file)
-- [Link to your YouTube video (_Work in Progress_)](link-to-youtube-video)
+- [Link to PowerPoint presentation file (_Work in Progress_)](link-to-ppt-file)
+- [Link to YouTube video (_Work in Progress_)](link-to-youtube-video)
 
     
 ## 2. Background
