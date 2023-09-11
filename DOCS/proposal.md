@@ -36,24 +36,6 @@ This project is significant for various reasons:
 4. What are the important takeaways and recommendations for politicians and infrastructure planners to encourage EV adoption and link infrastructure growth with localized demand?
 
 
-
-## 3. Data 
-
-Describe the datasets you are using to answer your research questions.
-
-- Data sources - Data is sourced from https://catalog.data.gov/dataset/electric-vehicle-population-data
-- Data size (MB, GB, etc.)
-- Data shape (# of rows and # columns)
-- Time period (for example, 2010 to 2020) if your data are time-bound
-- **What does each row represent?(a patient, a school, a crime, etc.)**
-- Data dictionary
-  - Columns name
-  - Data type
-  - Defition
-  - Potential values (for categorical valuables, what are the categories?)
-- Which variable/column will be your target/label in your ML model?
-- Which variables/columns may be selected as features/predictors for your ML models?
-
 ## 3. Data 
 
 **Data Sources:**
