@@ -41,7 +41,7 @@ This project is significant for various reasons:
 
 Describe the datasets you are using to answer your research questions.
 
-- Data sources
+- Data sources - Data is sourced from https://catalog.data.gov/dataset/electric-vehicle-population-data
 - Data size (MB, GB, etc.)
 - Data shape (# of rows and # columns)
 - Time period (for example, 2010 to 2020) if your data are time-bound
