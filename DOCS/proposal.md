@@ -44,20 +44,38 @@ This project is significant for various reasons:
 
 **Data Details:**
 
-- Data Size: 
+- Data Size: 113.17 MB
 
-- Data Shape: 
+- Data Shape: (143596,17)
 
-- Time Period: 
+- Time Period: 1997-2004
 
 
-Each row in the dataset represents [describe what each row represents, e.g., a registered electric vehicle owner].
+Each row in the dataset represents a registered electric vehicle in Washington state.
 
 **Data Dictionary:**
 
-  
-| Column Name       | Data Type    | Definition       | Potential Values  |
-| ----------------- | ------------ | ---------------- | ----------------- |
+|   # | Column Name                                      | Data Type |  Definition  |  Potential Values  |
+|    # | Column                | Definition                                                | Dtype   | Potential Values |
+| ---: | :-------------------- | :-------------------------------------------------------- | :------ | :--------------- |
+|    0 | VIN (1-10)            | Vehicle Identification Number (characters 1-10)           | object  |
+|    1 | County                | County where the vehicle is registered                    | object  |
+|    2 | City                  | City where the vehicle is registered                      | object  |
+|    3 | State                 | State where the vehicle is registered                     | object  |
+|    4 | Postal Code           | Postal code of the registration location                  | float64 |
+|    5 | Model Year            | Year of the vehicle's model                               | int64   |
+|    6 | Make                  | Manufacturer or make of the vehicle                       | object  |
+|    7 | Model                 | Model name or number of the vehicle                       | object  |
+|    8 | Electric Vehicle Type | Type of electric vehicle (e.g., Hybrid, Plug-in Electric) | object  |
+|    9 | CAFV Eligibility      | Clean Alternative Fuel Vehicle (CAFV) Eligibility         | object  |
+|   10 | Electric Range        | Electric range of the vehicle (in miles)                  | int64   |
+|   11 | Base MSRP             | Manufacturer's suggested retail price (in USD)            | int64   |
+|   12 | Legislative District  | Legislative district where the vehicle is registered      | float64 |
+|   13 | DOL Vehicle ID        | Department of Licensing (DOL) Vehicle ID                  | int64   |
+|   14 | Vehicle Location      | Location of the vehicle                                   | object  |
+|   15 | Electric Utility      | Electric utility provider for the vehicle                 | object  |
+|   16 | 2020 Census Tract     | Census tract of the registration location                 | float64 |
+
 
 
 
