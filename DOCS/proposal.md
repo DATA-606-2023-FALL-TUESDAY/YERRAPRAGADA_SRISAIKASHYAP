@@ -70,7 +70,7 @@ Each row in the dataset represents a property listing.
 |  16 | land_space_unit   | Unit of measurement for land space (sqft, acres, etc) | object   |                 |
 |  17 | broker_id         | Identifier for the broker/agent handling the listing | int64    |                 |
 |  18 | property_type     | Type of the property (e.g., single family home, apartment)      | object   |                 |
-|  19 | property_status   | Status of the property listing (e.g., for sale, sold) | object |                 |
+|  19 | property_status   | Status of the property listing (e.g., for sale, pending) | object |                 |
 |  20 | year_build        | Year when the property was built                   | int64    |                 |
 |  21 | total_num_units   | Total number of units in the property (if applicable) | int64  |                 |
 |  22 | listing_age       | Age of the property listing (in days)               | int64    |                 |
