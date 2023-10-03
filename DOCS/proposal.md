@@ -43,7 +43,7 @@ This project holds significance for several reasons:
 **Data Details:**
 
 - Data Size: 128.2 MB
-- Data Shape: (600000,24)
+- Data Shape: (600000,25)
 
 Each row in the dataset represents a property listing.
 
