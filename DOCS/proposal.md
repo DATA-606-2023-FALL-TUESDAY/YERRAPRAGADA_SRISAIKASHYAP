@@ -49,33 +49,37 @@ Each row in the dataset represents a property listing.
 
 **Data Dictionary:**
 
-|    # | Column             | Definition                                         | Dtype   | Potential Values |
-| ---: | :----------------- | :------------------------------------------------- | :------ | :--------------- |
-|    0 | property_id        | Unique identifier for each property listing        | int64   |                  |
-|    1 | address            | Address of the property                            | object  |                  |
-|    2 | city               | City where the property is located                 | object  |                  |
-|    3 | state              | State where the property is located                | object  |                  |
-|    4 | latitude           | Latitude coordinate of the property                | float64 |                  |
-|    5 | longitude          | Longitude coordinate of the property               | float64 |                  |
-|    6 | postcode           | Postal code of the property                        | object  |                  |
-|    7 | price              | Price of the property (target variable)            | float64 |                  |
-|    8 | bedroom_number     | Number of bedrooms in the property                 | float64 |                  |
-|    9 | bathroom_number    | Number of bathrooms in the property                | float64 |                  |
-|   10 | price_per_unit     | Price per unit area of the property                | float64 |                  |
-|   11 | living_space       | Living space area of the property (in sq. ft.)     | float64 |                  |
-|   12 | land_space         | Land space area of the property                    | float64 |                  |
-|   13 | land_space_unit    | Unit of measurement for land space (e.g., sq. ft.) | object  |                  |
-|   14 | broker_id          | Broker identifier (no values present)              | float64 |                  |
-|   15 | property_type      | Type of property (e.g., residential, commercial)   | object  |                  |
-|   16 | property_status    | Status of the property listing                     | object  |                  |
-|   17 | year_build         | Year the property was built (no values present)    | float64 |                  |
-|   18 | total_num_units    | Total number of units (no values present)          | float64 |                  |
-|   19 | listing_age        | Age of the property listing (in years)             | int64   |                  |
-|   20 | RunDate            | Date of the data run                               | object  |                  |
-|   21 | agency_name        | Name of the agency associated with the property    | object  |                  |
-|   22 | agent_name         | Agent's name (no values present)                   | float64 |                  |
-|   23 | agent_phone        | Agent's phone number (no values present)           | float64 |                  |
-|   24 | is_owned_by_zillow | Binary indicator if owned by Zillow (0 or 1)       | int64   | 0 (No), 1 (Yes)  |
+|  #  | Column            | Definition                                            | Dtype    | Potential Values |
+|----:|:------------------|:----------------------------------------------------|:---------|:-----------------|
+|   0 | property_url      | URL for the property listing                         | object   |                 |
+|   1 | property_id       | Unique identifier for each property listing         | int64    |                 |
+|   2 | address           | Address of the property                             | object   |                 |
+|   3 | street_name       | Name of the street where the property is located   | object   |                 |
+|   4 | apartment         | Apartment number or identifier (if applicable)     | object   |                 |
+|   5 | city              | City where the property is located                  | object   |                 |
+|   6 | state             | State where the property is located                 | object   |                 |
+|   7 | latitude          | Latitude coordinate of the property                 | float64  |                 |
+|   8 | longitude         | Longitude coordinate of the property                | float64  |                 |
+|   9 | postcode          | Postal code of the property                         | object   |                 |
+|  10 | price             | Price of the property (target variable)             | float64  |                 |
+|  11 | bedroom_number    | Number of bedrooms in the property                  | float64  |                 |
+|  12 | bathroom_number   | Number of bathrooms in the property                 | float64  |                 |
+|  13 | price_per_unit    | Price per unit area (if available)                  | float64  |                 |
+|  14 | living_space      | Living space area of the property(in sqft)                   | float64  |                 |
+|  15 | land_space        | Land space area of the property (if applicable)    | float64  |                 |
+|  16 | land_space_unit   | Unit of measurement for land space (sqft, acres, etc) | object   |                 |
+|  17 | broker_id         | Identifier for the broker/agent handling the listing | int64    |                 |
+|  18 | property_type     | Type of the property (e.g., single family home, apartment)      | object   |                 |
+|  19 | property_status   | Status of the property listing (e.g., for sale, sold) | object |                 |
+|  20 | year_build        | Year when the property was built                   | int64    |                 |
+|  21 | total_num_units   | Total number of units in the property (if applicable) | int64  |                 |
+|  22 | listing_age       | Age of the property listing (in days)               | int64    |                 |
+|  23 | RunDate           | Date when the data was recorded                     | object   |                 |
+|  24 | agency_name       | Name of the agency representing the property        | object   |                 |
+|  25 | agent_name        | Name of the agent representing the property         | object   |                 |
+|  26 | agent_phone       | Phone number of the agent                           | object   |                 |
+|  27 | is_owned_by_zillow | Boolean indicating whether the property is owned by Zillow | bool | True, False     |
+
 
 
 
