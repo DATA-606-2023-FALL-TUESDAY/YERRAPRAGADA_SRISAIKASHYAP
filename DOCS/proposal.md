@@ -1,8 +1,6 @@
-
- 
 ## 1. Title and Author
 
-# **Localized Electric Vehicle Planning**
+# **Real Estate Price Analysis and Prediction**
 
 *Prepared for UMBC Data Science Master Degree Capstone by Dr. Chaojie (Jay) Wang*
 
@@ -18,115 +16,107 @@
 
 **What is it about?**
 
-The goal of the project is to create a data-driven strategy to encourage and assist the adoption of electric cars while also effectively preparing for the deployment of EV charging infrastructure at the local level. This research attempts to guarantee that infrastructure development corresponds to real adoption patterns by examining previous EV adoption rates and estimating future demand for charging infrastructure based on specific geographic locations (postal codes).
+The goal of this project is to develop a data-driven approach for predicting real estate prices and providing valuable insights into the housing market. This research aims to leverage a dataset containing property information, such as location, price, bedroom and bathroom counts, living space, to build predictive models and facilitate informed decision-making in the real estate industry.
 
 **Why does it matter?**
 
-This project is significant for various reasons:
+This project holds significance for several reasons:
 
-- Increased EV adoption decreases greenhouse gas emissions and air pollution, resulting in a cleaner environment and lessening the consequences of climate change.
-- Energy Sustainability: EV promotion aids in the shift to renewable energy sources, hence improving energy sustainability.
-- Economic Advantages: EV adoption boosts the economy by providing employment in the EV sector and reducing reliance on imported fossil fuels.
+- Informed Investment: Accurate price predictions assist potential buyers, sellers, and investors in making informed real estate decisions.
+- Market Insights: Analyzing real estate data provides insights into market trends, helping professionals adapt to changing conditions.
+- Economic Impact: The housing market has a substantial impact on the economy, and informed decisions can contribute to economic stability.
 
 **Research questions:**
 
-1. What have been the historical trends in electric car adoption rates by Model Year, Make, and Electric car Type in certain geographical locations (postal codes)?
-2. Based on historical data and car characteristics, can we forecast future electric vehicle adoption rates in these areas?
-3. What is the relationship between electric car uptake and expected demand for electric vehicle charging infrastructure at the postal code level?
-4. What are the important takeaways and recommendations for politicians and infrastructure planners to encourage EV adoption and link infrastructure growth with localized demand?
+1. How can we predict real estate prices based on property features such as location, size, and etc?
+2. What are the key factors influencing property prices, and how do they vary by location (postcode)?
+3. Can machine learning models provide valuable insights into property market dynamics?
+4. How can the results of this analysis benefit real estate professionals and individuals interested in property investment?
 
 
 ## 3. Data 
 
 **Data Sources:**
 
-- Data is sourced from [Data.gov - Electric Vehicle Population Data](https://catalog.data.gov/dataset/electric-vehicle-population-data).
+- Data is sourced from [Kaggle Datasets- 500000+ US Homes Data](https://www.kaggle.com/datasets/polartech/500000-us-homes-data-for-sale-properties).
 
 **Data Details:**
 
-- Data Size: 113.17 MB
+- Data Size: 128.2 MB
+- Data Shape: (600000,24)
 
-- Data Shape: (143596,17)
-
-- Time Period: 1997-2004
-
-
-Each row in the dataset represents a registered electric vehicle in Washington state.
+Each row in the dataset represents a property listing.
 
 **Data Dictionary:**
 
-|   # | Column Name                                      | Data Type |  Definition  |  Potential Values  |
-|    # | Column                | Definition                                                | Dtype   | Potential Values |
-| ---: | :-------------------- | :-------------------------------------------------------- | :------ | :--------------- |
-|    0 | VIN (1-10)            | Vehicle Identification Number (characters 1-10)           | object  |
-|    1 | County                | County where the vehicle is registered                    | object  |
-|    2 | City                  | City where the vehicle is registered                      | object  |
-|    3 | State                 | State where the vehicle is registered                     | object  |
-|    4 | Postal Code           | Postal code of the registration location                  | float64 |
-|    5 | Model Year            | Year of the vehicle's model                               | int64   |
-|    6 | Make                  | Manufacturer or make of the vehicle                       | object  |
-|    7 | Model                 | Model name or number of the vehicle                       | object  |
-|    8 | Electric Vehicle Type | Type of electric vehicle (e.g., Hybrid, Plug-in Electric) | object  |
-|    9 | CAFV Eligibility      | Clean Alternative Fuel Vehicle (CAFV) Eligibility         | object  |
-|   10 | Electric Range        | Electric range of the vehicle (in miles)                  | int64   |
-|   11 | Base MSRP             | Manufacturer's suggested retail price (in USD)            | int64   |
-|   12 | Legislative District  | Legislative district where the vehicle is registered      | float64 |
-|   13 | DOL Vehicle ID        | Department of Licensing (DOL) Vehicle ID                  | int64   |
-|   14 | Vehicle Location      | Location of the vehicle                                   | object  |
-|   15 | Electric Utility      | Electric utility provider for the vehicle                 | object  |
-|   16 | 2020 Census Tract     | Census tract of the registration location                 | float64 |
+|    # | Column             | Definition                                         | Dtype   | Potential Values |
+| ---: | :----------------- | :------------------------------------------------- | :------ | :--------------- |
+|    0 | property_id        | Unique identifier for each property listing        | int64   |                  |
+|    1 | address            | Address of the property                            | object  |                  |
+|    2 | city               | City where the property is located                 | object  |                  |
+|    3 | state              | State where the property is located                | object  |                  |
+|    4 | latitude           | Latitude coordinate of the property                | float64 |                  |
+|    5 | longitude          | Longitude coordinate of the property               | float64 |                  |
+|    6 | postcode           | Postal code of the property                        | object  |                  |
+|    7 | price              | Price of the property (target variable)            | float64 |                  |
+|    8 | bedroom_number     | Number of bedrooms in the property                 | float64 |                  |
+|    9 | bathroom_number    | Number of bathrooms in the property                | float64 |                  |
+|   10 | price_per_unit     | Price per unit area of the property                | float64 |                  |
+|   11 | living_space       | Living space area of the property (in sq. ft.)     | float64 |                  |
+|   12 | land_space         | Land space area of the property                    | float64 |                  |
+|   13 | land_space_unit    | Unit of measurement for land space (e.g., sq. ft.) | object  |                  |
+|   14 | broker_id          | Broker identifier (no values present)              | float64 |                  |
+|   15 | property_type      | Type of property (e.g., residential, commercial)   | object  |                  |
+|   16 | property_status    | Status of the property listing                     | object  |                  |
+|   17 | year_build         | Year the property was built (no values present)    | float64 |                  |
+|   18 | total_num_units    | Total number of units (no values present)          | float64 |                  |
+|   19 | listing_age        | Age of the property listing (in years)             | int64   |                  |
+|   20 | RunDate            | Date of the data run                               | object  |                  |
+|   21 | agency_name        | Name of the agency associated with the property    | object  |                  |
+|   22 | agent_name         | Agent's name (no values present)                   | float64 |                  |
+|   23 | agent_phone        | Agent's phone number (no values present)           | float64 |                  |
+|   24 | is_owned_by_zillow | Binary indicator if owned by Zillow (0 or 1)       | int64   | 0 (No), 1 (Yes)  |
 
 
 
+**Target/Label Variable:** price
 
-
-**Target/Label Variable:** 
-
-**Feature/Predictor Variables:** 
+**Feature/Predictor Variables:** postcode, city, bedroom_number, bathroom_number, living_space
 
 
 ## 4. Exploratory Data Analysis (EDA)
 
 - Perform data exploration using Jupyter Notebook
-- You would focus on the target variable and the selected features and drop all other columns.
-- produce summary statistics of key variables
-- Create visualizations (I recommend using **Plotly Express**)
-- Find out if the data require cleansing:
-  - Missing values?
-  - Duplicate rows? 
-- Find out if the data require splitting, merging, pivoting, melting, etc.
-- Find out if you need to bring in other data sources to augment your data.
-  - For example, population, socioeconomic data from Census may be helpful.
-- For textual data, you will pre-process (normalize, remove stopwords, tokenize) them before you can analyze them in predictive analysis/machine learning.
-- Make sure the resulting dataset need to be "tidy":
-  - each row represent one observation (ideally one unique entity/subject).
-  - each columm represents one unique property of that entity. 
+- Focus on the target variable (Price) and selected features
+- Calculate summary statistics of key variables
+- Create visualizations, utilizing tools like **Matplotlib** and **Seaborn**
+- Check for data quality issues:
+  - Missing values
+  - Duplicate rows
+- Assess the need for data preprocessing or augmentation, such as incorporating demographic data from census sources.
 
 ## 5. Model Training 
 
-- What models you will be using for predictive analytics?
-- How will you train the models?
-  - Train vs test split (80/20, 70/30, etc.)
-  - Python packages to be used (scikit-learn, NLTK, spaCy, etc.)
-  - The development environments (your laptop, Google CoLab, GitHub CodeSpaces, etc.)
-- How will you measure and compare the performance of the models?
+- Utilize machine learning models for real estate price prediction
+- Split the dataset into training and testing sets (e.g., 80/20)
+- Python packages for modeling (e.g., scikit-learn)
+- Measure and compare model performance using appropriate metrics (e.g., RMSE, MAE, R-squared)
 
 ## 6. Application of the Trained Models
 
-Develop a web app for people to interact with your trained models. Potential tools for web app development:
+Develop a web application to enable users to interact with the trained models and obtain property price predictions. Recommended tools for web app development:
 
-- **Streamlit** (recommended for its simplicity and ease to learn)
+- **Streamlit** (recommended for its simplicity and ease of use)
 - Dash
 - Flask
 
 ## 7. Conclusion
 
-- Summarize your work and its potetial application
-- Point out the limitations of your work
-- Lessons learned 
-- Talk about future research direction
+- Summarize the project's objectives and outcomes
+- Highlight the potential applications of the predictive models in the real estate industry
+- Discuss project limitations and lessons learned
+- Suggest directions for future research in real estate analytics
 
 ## 8. References 
 
-List articles, blogs, and websites that you have referenced or used in your project.
-
+List articles, blogs, datasets, and other resources that you have referenced or used in your project.
