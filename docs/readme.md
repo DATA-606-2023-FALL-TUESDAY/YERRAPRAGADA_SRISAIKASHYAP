@@ -1,5 +1,6 @@
 # SRI YERRAPRAGADA
-(https://example.com/your_picture_link.jpg)
+<img src="headshot.jpg" alt="Sri Yerrapragada" width="100"/>
+
 
 Email: sri.yerrapragada1@gmail.com | Phone: (681) 219 7452 | [LinkedIn](www.linkedin.com/in/sri-yerrapragada) | [Portfolio](#)
 
