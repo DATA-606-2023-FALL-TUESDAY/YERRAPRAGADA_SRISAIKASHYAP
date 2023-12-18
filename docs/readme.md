@@ -2,7 +2,7 @@
 <img src="headshot.jpg" alt="Sri Yerrapragada" width="100"/>
 
 
-Email: sri.yerrapragada1@gmail.com | Phone: (681) 219 7452 | [LinkedIn](www.linkedin.com/in/sri-yerrapragada) | [Portfolio](#)
+Email: sri.yerrapragada1@gmail.com | Phone: (681) 219 7452 | [LinkedIn](www.linkedin.com/in/sri-yerrapragada) | [GitHub](https://github.com/kyerrapragada)
 
 ## PROFILE SUMMARY
 Master’s in data science candidate with three years of professional experience in data analysis and business intelligence. Microsoft Certified Data Analyst proficient in SQL and Power BI. Skilled in data collection, interpretation, and analysis, with a talent for translating business objectives into technical solutions. Experienced in cloud environments, certified in Microsoft Azure. Actively exploring opportunities to leverage my abilities and expertise in areas such as Data Analyst, Data Engineer, or equivalent technical positions.
